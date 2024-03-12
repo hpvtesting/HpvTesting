@@ -1,0 +1,59 @@
+#loading-overlay {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    cursor: progress;
+}
+
+    #loading-overlay.waiting #loading-indicator {
+        display: block;
+    }
+
+    #loading-overlay #loading-indicator {
+        display: none;
+        position: absolute;
+        right: 50px;
+        bottom: 50px;
+        height: 90px;
+        width: 90px;
+        border-width: 30px;
+        border-style: double;
+        border-color: #06a1db transparent transparent;
+        border-radius: 50%;
+        -webkit-animation: spin 1s linear infinite;
+        -moz-animation: spin 1s linear infinite;
+        -o-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+    }
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+
+@-o-keyframes spin {
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+#loading-overlay #loading-indicator {
+    border-color: #06a1db transparent transparent;
+}
