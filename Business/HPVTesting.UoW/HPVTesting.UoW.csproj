@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HPVTesting.Interfaces\HPVTesting.Interfaces.csproj" />
+    <ProjectReference Include="..\HPVTesting.Repositories\HPVTesting.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
